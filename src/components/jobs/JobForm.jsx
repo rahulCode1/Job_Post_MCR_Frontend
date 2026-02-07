@@ -25,7 +25,7 @@ const JobForm = () => {
             type="text"
             id="title"
             name="title"
-            // required
+            required
             placeholder="Enter job title"
             className="form-control"
           />
@@ -39,7 +39,7 @@ const JobForm = () => {
             id="companyName"
             name="companyName"
             placeholder="Enter company name"
-            // required
+            required
             className="form-control"
           />
         </div>
@@ -52,7 +52,7 @@ const JobForm = () => {
             id="location"
             name="location"
             placeholder="Enter company location"
-            // required
+            required
             className="form-control"
           />
         </div>
@@ -65,7 +65,7 @@ const JobForm = () => {
             id="salary"
             name="salary"
             placeholder="Enter job salary"
-            // required
+            required
             className="form-control"
           />
         </div>
@@ -87,7 +87,7 @@ const JobForm = () => {
             type="text"
             id="description"
             name="description"
-            // required
+            required
             placeholder="Enter job description"
             className="form-control"
           />
@@ -100,7 +100,7 @@ const JobForm = () => {
             type="text"
             id="qualifications"
             name="qualifications"
-            // required
+            required
             placeholder="Enter job qualifications with comma(',') separated"
             className="form-control"
           />
