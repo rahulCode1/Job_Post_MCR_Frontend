@@ -8,9 +8,11 @@ const JobsList = ({ jobsList }) => {
   const [isDeleting, setIsDeleting] = useState(false);
   const revalidator = useRevalidator();
   const { searchText } = useJobContext();
-  const searchedJobs = jobsList.filter((job) =>
+  const searchedJobs = searchText.length === 0 ? jobsList : jobsList.filter((job) =>
     job.title.toLowerCase().includes(searchText.toLowerCase()),
   );
+
+console.log(jobsList)
 
   const handleRemoveJob = async (jobId) => {
     const toastId = toast.loading("Deleting job post...");
